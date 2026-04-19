@@ -1,0 +1,113 @@
+---
+title: Code of Criminal Procedure 1973 — Arrest, Bail and Trial
+category: criminal_law
+source: Government of India — Code of Criminal Procedure 1973 — Arrest, Bail and Trial
+year: 1973
+generated_at: 2026-04-19
+word_count: 1724
+---
+
+=== Code of Criminal Procedure (CrPC) 1973 ===
+
+The Code of Criminal Procedure, 1973, is an exhaustive and comprehensive piece of legislation that outlines the procedures to be followed in criminal cases in India. This document provides a detailed overview of the CrPC, focusing on arrest, bail, and trial procedures.
+
+--- ARREST (S.41-60)
+
+The CrPC provides for the procedures to be followed when making an arrest. The following sections are relevant:
+
+* S.41: 9 conditions for arrest without warrant. The police can arrest a person without a warrant if they satisfy any of the following conditions:
+	1. The person has been concerned in a cognizable offence.
+	2. The person is suspected to be a deserter from the armed forces.
+	3. The person is a proclaimed offender.
+	4. The person is suspected to be a person against whom a reasonable complaint has been made.
+	5. The person is suspected to be a person who has in his possession any implement of house-breaking.
+	6. The person is suspected to be a person who has been concerned in any offence punishable with imprisonment for a term of 4 years or more.
+	7. The person is suspected to be a person who has been concerned in any offence punishable with imprisonment for a term of less than 4 years, but the person is likely to commit a further offence.
+	8. The person is suspected to be a person who has been concerned in any offence punishable with imprisonment for a term of less than 4 years, but the person is likely to tamper with evidence.
+	9. The person is suspected to be a person who has been concerned in any offence punishable with imprisonment for a term of less than 4 years, but the person is likely to intimidate witnesses.
+* S.41A: Notice to appear (2009 amendment — Arnesh Kumar guidelines 2014 SC). The police must issue a notice to the person to appear before the police, and the person must be given an opportunity to explain their side of the story.
+* S.41B: Procedure of arrest — name, designation of arresting officer. The arresting officer must identify themselves and provide their name and designation to the person being arrested.
+* S.41C: Control room at districts. A control room must be established at each district to monitor and oversee the arrest process.
+* S.41D: Right to meet advocate during interrogation. The person being arrested has the right to meet with an advocate during interrogation.
+* S.46: How arrest is made — no more restraint than necessary; woman arrested only by woman officer after sunset only with magistrate permission. The arrest must be made with minimal restraint, and a woman can only be arrested by a woman officer after sunset with the permission of a magistrate.
+* S.49: No unnecessary restraint. The person being arrested must not be subjected to unnecessary restraint.
+* S.50: Grounds of arrest to be communicated; right to bail in bailable offence. The person being arrested must be informed of the grounds of arrest and has the right to bail in bailable offences.
+* S.50A: Inform nominated person of arrest (2008 amendment). The person being arrested must be allowed to inform a nominated person of their arrest.
+* S.54: Medical examination of arrested person. The person being arrested must be provided with a medical examination.
+* S.57: Not to be detained beyond 24 hours without magistrate order. The person being arrested must not be detained beyond 24 hours without the order of a magistrate.
+* S.167: Remand — judicial custody procedure; default bail (S.167(2)) if chargesheet not filed within 60/90 days (magistrate/sessions triable). The person being arrested must be produced before a magistrate within 24 hours, and if the chargesheet is not filed within 60/90 days, the person is entitled to default bail.
+
+--- BAIL (S.436-450)
+
+The CrPC provides for the procedures to be followed when granting bail. The following sections are relevant:
+
+* S.436: Bailable offences — bail is a right, police/court MUST grant. In bailable offences, bail is a right, and the police or court must grant bail.
+* S.436A: Maximum detention — bail after half the maximum sentence period served. If the person has served half of the maximum sentence period, they are entitled to bail.
+* S.437: Non-bailable offences — court's discretion; 7 factors; special provisions for women, children under 16, sick/infirm persons. In non-bailable offences, the court has discretion to grant bail, considering the following factors:
+	1. The nature and gravity of the offence.
+	2. The antecedents of the person.
+	3. The possibility of the person fleeing from justice.
+	4. The possibility of the person tampering with evidence.
+	5. The possibility of the person intimidating witnesses.
+	6. The likelihood of the person committing a further offence.
+	7. The interest of justice.
+* S.437A: Bail on conclusion of trial before higher court. If the person is acquitted or convicted by a lower court, they are entitled to bail pending appeal to a higher court.
+* S.438: Anticipatory bail — application to Sessions Court or High Court; conditions court may impose; cannot be time-limited per SC (Sushila Aggarwal 2020). The person can apply for anticipatory bail to the Sessions Court or High Court, and the court may impose conditions.
+* S.439: Special powers of HC/Sessions Court — can cancel bail also. The High Court or Sessions Court has special powers to grant or cancel bail.
+* S.440-450: Amount of bail, sureties, cash bail, cancellation. The CrPC provides for the procedures to be followed when determining the amount of bail, sureties, cash bail, and cancellation of bail.
+
+--- FIR AND INVESTIGATION (S.154-176)
+
+The CrPC provides for the procedures to be followed when registering a First Information Report (FIR) and conducting an investigation. The following sections are relevant:
+
+* S.154: FIR — must be recorded in writing, read to informant, signed; zero FIR concept; S.154(3) if officer refuses, send written complaint to SP. The FIR must be recorded in writing, read to the informant, and signed.
+* S.155: Non-cognizable offences — police need magistrate order. In non-cognizable offences, the police need a magistrate's order to investigate.
+* S.157-173: Investigation, spot inspection, inquest (S.174-176 — unnatural death). The police must conduct an investigation, spot inspection, and inquest in cases of unnatural death.
+* S.173: Police report (chargesheet) — within 60 days (magistrate triable) or 90 days (sessions). The police must file a chargesheet within 60 days for magistrate triable cases or 90 days for sessions triable cases.
+
+--- TRIAL PROCEDURE
+
+The CrPC provides for the procedures to be followed during a trial. The following sections are relevant:
+
+* S.190-204: Cognizance of offences by magistrate; issue of process. The magistrate must take cognizance of the offence and issue a process.
+* S.225-250: Sessions trial — charge (S.228), defence (S.233), judgment (S.235). The sessions trial involves the charge, defence, and judgment.
+* S.251-259: Warrant case trial before magistrate. The warrant case trial is conducted before a magistrate.
+* S.260-265L: Summary trials; plea bargaining (S.265A-265L, 2005 amendment). The summary trial involves a simplified procedure, and plea bargaining is allowed.
+* S.300: Double jeopardy — once acquitted/convicted, cannot be tried for same offence. A person cannot be tried twice for the same offence.
+* S.313: Examination of accused — must be given opportunity to explain evidence. The accused must be given an opportunity to explain the evidence against them.
+* S.321: Withdrawal from prosecution by public prosecutor. The public prosecutor can withdraw from the prosecution.
+
+### BAIL TYPE COMPARISON TABLE
+
+| Type of Bail | Description | Eligibility |
+| --- | --- | --- |
+| Regular Bail | Bail granted to a person who is already in custody | Any person who is in custody |
+| Anticipatory Bail | Bail granted to a person who has not been arrested yet | Any person who has reason to believe that they will be arrested |
+| Interim Bail | Temporary bail granted to a person until the final disposal of the case | Any person who is in custody and has a strong case for bail |
+| Default Bail | Bail granted to a person when the police fail to file a chargesheet within the prescribed time limit | Any person who is in custody and the police have failed to file a chargesheet within the prescribed time limit |
+
+### PRACTICAL NOTES
+
+The following are some practical notes for citizens:
+
+1. **Right to Bail**: In bailable offences, bail is a right, and the police or court must grant bail.
+2. **Notice to Appear**: The police must issue a notice to the person to appear before the police, and the person must be given an opportunity to explain their side of the story.
+3. **Medical Examination**: The person being arrested must be provided with a medical examination.
+4. **Informing a Nominated Person**: The person being arrested must be allowed to inform a nominated person of their arrest.
+5. **Default Bail**: If the police fail to file a chargesheet within the prescribed time limit, the person is entitled to default bail.
+6. **Plea Bargaining**: Plea bargaining is allowed in summary trials, and the accused can negotiate a plea with the prosecution.
+
+### CITIZEN Q&A
+
+1. **Q: What is the difference between a bailable and non-bailable offence?**
+A: In a bailable offence, bail is a right, and the police or court must grant bail. In a non-bailable offence, the court has discretion to grant bail.
+2. **Q: Can the police arrest a person without a warrant?**
+A: Yes, the police can arrest a person without a warrant if they satisfy any of the conditions under S.41 of the CrPC.
+3. **Q: What is anticipatory bail?**
+A: Anticipatory bail is bail granted to a person who has not been arrested yet, but has reason to believe that they will be arrested.
+4. **Q: Can a person be tried twice for the same offence?**
+A: No, a person cannot be tried twice for the same offence, as per the principle of double jeopardy.
+5. **Q: What is the procedure for filing a FIR?**
+A: The FIR must be recorded in writing, read to the informant, and signed.
+6. **Q: Can a person apply for bail online?**
+A: No, a person cannot apply for bail online. They must apply to the court or police station in person or through a lawyer.

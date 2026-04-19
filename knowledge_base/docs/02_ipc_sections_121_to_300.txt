@@ -1,7 +1,7 @@
 ---
-title: Indian Penal Code — Sections 1 to 120
+title: Indian Penal Code — Sections 121 to 300
 category: criminal_law
-subcategory: ipc_general
+subcategory: ipc_offences_state
 source: Government of India — Indian Penal Code, 1860
 year: 1860
 scraped_from: https://indiacode.nic.in/handle/123456789/2263

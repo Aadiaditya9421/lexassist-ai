@@ -1,0 +1,110 @@
+---
+title: Constitution of India — Fundamental Rights (Articles 12–35)
+category: constitutional_law
+source: Government of India — Constitution of India — Fundamental Rights (Articles 12–35)
+year: 1950
+generated_at: 2026-04-19
+word_count: 1405
+---
+
+=== Fundamental Rights — Constitution of India (Part III, Articles 12-35)
+
+### Introduction
+The Fundamental Rights enshrined in Part III of the Constitution of India are a cornerstone of the country's democratic framework. These rights are essential for the well-being and dignity of individuals and are enforceable by the courts. This document provides a comprehensive overview of the Fundamental Rights, including their scope, application, and limitations.
+
+### Article 12: Definition of State
+Article 12 defines the term "State" to include the Government and Parliament of India, the State Legislatures, local authorities, and other authorities. The Ajay Hasia test is used to determine whether a body is an instrumentality of the State.
+
+### Article 13: Pre-constitutional and Post-constitutional Laws
+Article 13 provides that any law, whether enacted before or after the commencement of the Constitution, which is inconsistent with the Fundamental Rights, shall be void to the extent of the inconsistency. This article also includes ordinances, bylaws, and customs within its scope.
+
+### Article 14: Right to Equality
+Article 14 guarantees the right to equality before the law and equal protection of the laws. The reasonable classification test, which requires an intelligible differentia and a rational nexus, is used to determine whether a law is discriminatory.
+
+### Article 15: Prohibition of Discrimination
+Article 15 prohibits discrimination on the grounds of religion, race, caste, sex, or place of birth. However, special provisions can be made for women, children, and backward classes. The 93rd Amendment allows for reservations for Other Backward Classes (OBCs), Scheduled Castes (SCs), and Scheduled Tribes (STs) in unaided private educational institutions. The 103rd Amendment provides for a 10% reservation for Economically Weaker Sections (EWS).
+
+### Article 16: Equality in Public Employment
+Article 16 guarantees equality of opportunity in public employment. Reservations can be made for backward classes, and the article also provides for reservations in promotion for SCs and STs.
+
+### Article 17: Abolition of Untouchability
+Article 17 abolishes the practice of untouchability and makes it an offence punishable under the Protection of Civil Rights Act, 1955.
+
+### Article 18: Abolition of Titles
+Article 18 prohibits the granting of titles, except in cases where the title is a military or academic distinction. The Supreme Court has upheld the validity of the Bharat Ratna and Padma awards.
+
+### Article 19: Six Freedoms
+Article 19 guarantees six freedoms, including:
+- Freedom of speech and expression (19(1)(a))
+- Freedom to assemble peacefully without arms (19(1)(b))
+- Freedom to form associations or unions (19(1)(c))
+- Freedom to move freely throughout India (19(1)(d))
+- Freedom to reside and settle in any part of India (19(1)(e))
+- Freedom to practise any profession or carry on any trade (19(1)(g))
+
+These freedoms are subject to reasonable restrictions, which are specified in Article 19(2).
+
+### Article 20: Protection in Respect of Conviction
+Article 20 provides protection against ex post facto laws, double jeopardy, and self-incrimination. It also guarantees the right to silence and the right not to be compelled to be a witness against oneself.
+
+### Article 21: Protection of Life and Personal Liberty
+Article 21 guarantees the right to life and personal liberty. The scope of this article has been expanded by the courts to include the right to privacy, health, livelihood, and protection against custodial violence.
+
+### Article 21A: Free and Compulsory Education
+Article 21A provides for free and compulsory education for children between the ages of 6 and 14. This article was inserted by the 86th Amendment and is implemented through the Right to Education Act, 2009.
+
+### Article 22: Protection Against Arbitrary Arrest
+Article 22 provides protection against arbitrary arrest and detention. It requires that the grounds of arrest be communicated to the person immediately, and that the person be produced before a magistrate within 24 hours.
+
+### Article 23: Prohibition of Traffic in Human Beings
+Article 23 prohibits the trafficking of human beings, begar, and forced labour. The Bonded Labour System (Abolition) Act, 1976, is a legislation that gives effect to this article.
+
+### Article 24: Prohibition of Child Labour
+Article 24 prohibits the employment of children below the age of 14 in factories, mines, and hazardous employment.
+
+### Articles 25-28: Freedom of Conscience and Religion
+Articles 25-28 guarantee the freedom of conscience and religion. They provide for the freedom to manage religious affairs, prohibit the imposition of religious taxes, and restrict the provision of religious instruction in state educational institutions.
+
+### Articles 29-30: Minorities' Rights
+Articles 29-30 guarantee the rights of minorities to conserve their language, script, and culture. They also provide for the right to establish and administer educational institutions.
+
+### Article 32: Right to Constitutional Remedies
+Article 32 provides for the right to constitutional remedies, which is considered the "heart and soul" of the Constitution. This article allows individuals to approach the Supreme Court for the enforcement of their Fundamental Rights.
+
+### Articles 33-35: Restrictions on Fundamental Rights
+Articles 33-35 provide for the restriction of Fundamental Rights in certain circumstances, such as for the armed forces, in martial law areas, and in cases where the Parliament has the power to legislate.
+
+--- FIVE WRITS QUICK REFERENCE
+
+| Writ | Description | Purpose |
+| --- | --- | --- |
+| Habeas Corpus | Produces the body of a person before the court | To challenge the legality of detention |
+| Mandamus | Commands a person to perform a public duty | To compel a public authority to perform a duty |
+| Prohibition | Restrains a lower court from exceeding its jurisdiction | To prevent a lower court from acting beyond its powers |
+| Certiorari | Quashes an order of a lower court | To correct an error of law or fact in a lower court's decision |
+| Quo Warranto | Questions the authority of a person to hold a public office | To challenge the validity of a person's appointment to a public office |
+
+--- PRACTICAL NOTES
+
+The following are some practical notes on the Fundamental Rights:
+
+1. **Right to Equality**: The right to equality is a fundamental right that guarantees equal treatment under the law. However, this right is not absolute and can be restricted in certain circumstances.
+2. **Freedom of Speech and Expression**: The freedom of speech and expression is a fundamental right that guarantees the right to express one's opinions and ideas. However, this right is subject to reasonable restrictions, such as those related to national security, public order, and morality.
+3. **Right to Life and Personal Liberty**: The right to life and personal liberty is a fundamental right that guarantees the right to live with dignity and freedom. This right has been expanded by the courts to include the right to privacy, health, and livelihood.
+4. **Right to Education**: The right to education is a fundamental right that guarantees the right to free and compulsory education for children between the ages of 6 and 14.
+5. **Right to Constitutional Remedies**: The right to constitutional remedies is a fundamental right that guarantees the right to approach the Supreme Court for the enforcement of Fundamental Rights.
+
+--- Q&A
+
+1. **What is the definition of "State" under Article 12 of the Constitution?**
+The term "State" includes the Government and Parliament of India, the State Legislatures, local authorities, and other authorities.
+2. **What is the reasonable classification test under Article 14?**
+The reasonable classification test requires an intelligible differentia and a rational nexus to determine whether a law is discriminatory.
+3. **What are the six freedoms guaranteed under Article 19?**
+The six freedoms guaranteed under Article 19 are: freedom of speech and expression, freedom to assemble peacefully, freedom to form associations or unions, freedom to move freely, freedom to reside and settle, and freedom to practise any profession or carry on any trade.
+4. **What is the scope of Article 21?**
+The scope of Article 21 has been expanded by the courts to include the right to privacy, health, livelihood, and protection against custodial violence.
+5. **What is the purpose of the five writs under Article 32?**
+The five writs under Article 32 are: habeas corpus, mandamus, prohibition, certiorari, and quo warranto. These writs are used to enforce Fundamental Rights and to challenge the actions of public authorities.
+6. **What is the significance of the 93rd and 103rd Amendments to the Constitution?**
+The 93rd Amendment allows for reservations for OBCs, SCs, and STs in unaided private educational institutions, while the 103rd Amendment provides for a 10% reservation for EWS.

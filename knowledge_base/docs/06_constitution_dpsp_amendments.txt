@@ -1,0 +1,113 @@
+---
+title: Constitution of India — DPSP, Fundamental Duties and Key Amendments
+category: constitutional_law
+source: Government of India — Constitution of India — DPSP, Fundamental Duties and Key Amendments
+year: 1950
+generated_at: 2026-04-19
+word_count: 1737
+---
+
+=== PART IV — DIRECTIVE PRINCIPLES OF STATE POLICY (DPSP)
+The Directive Principles of State Policy are enshrined in Part IV of the Indian Constitution, from Article 36 to Article 51. These principles are guidelines that the State is expected to follow while making laws and policies.
+
+--- Introduction to DPSP
+The DPSP are not justiciable, meaning they cannot be enforced by the courts. However, they are fundamental in the governance of the country and are used by the courts to interpret laws. The DPSP are classified into three categories: socialist, Gandhian, and liberal-intellectual.
+
+--- Classification of DPSP
+The following table classifies the DPSP into three categories:
+
+| Article | DPSP | Classification |
+| --- | --- | --- |
+| 38 | Secure social order for welfare | Socialist |
+| 39 | Adequate livelihood, equal pay for equal work, no concentration of wealth | Socialist |
+| 40 | Panchayati Raj | Gandhian |
+| 41 | Right to work, education, public assistance | Liberal-Intellectual |
+| 42 | Maternity relief and humane work conditions | Socialist |
+| 43 | Living wage; promotion of cottage industries | Gandhian |
+| 43A | Worker participation in management | Socialist |
+| 44 | Uniform Civil Code | Liberal-Intellectual |
+| 45 | Early childhood care till age 6 | Liberal-Intellectual |
+| 46 | Promote SC/ST economic and educational interests | Socialist |
+| 47 | Raise nutrition, standard of living; prohibition of intoxicating drinks | Gandhian |
+| 48 | Agriculture, animal husbandry; cow slaughter | Gandhian |
+| 48A | Protect and improve environment | Liberal-Intellectual |
+| 49 | Protection of national monuments | Liberal-Intellectual |
+| 50 | Separation of judiciary from executive | Liberal-Intellectual |
+| 51 | International peace; respect for international law and treaty obligations | Liberal-Intellectual |
+
+--- Key Provisions of DPSP
+Some of the key provisions of the DPSP include:
+
+* Article 38: The State shall strive to promote the welfare of the people by securing and protecting the social order.
+* Article 39: The State shall direct its policy towards securing that the citizens, men and women equally, have the right to an adequate means of livelihood, that there is equal pay for equal work for both men and women, and that there is no concentration of wealth.
+* Article 40: The State shall take steps to organize village panchayats and endow them with such powers and authority as may be necessary to enable them to function as units of self-government.
+* Article 41: The State shall make provision for securing the right to work, to education, and to public assistance in cases of unemployment, old age, sickness, and disability.
+* Article 42: The State shall make provision for securing just and humane conditions of work and for maternity relief.
+* Article 43: The State shall endeavor to secure, by suitable legislation or economic organization or in any other way, to all workers, agricultural, industrial or otherwise, work, a living wage, conditions of work ensuring a decent standard of life and full enjoyment of leisure and social and cultural opportunities.
+* Article 43A: The State shall take steps to encourage the participation of workers in the management of undertakings, establishments, or other organizations engaged in any industry.
+* Article 44: The State shall endeavor to secure for the citizens a uniform civil code throughout the territory of India.
+* Article 45: The State shall endeavor to provide early childhood care and education for all children below the age of six years.
+* Article 46: The State shall promote with special care the educational and economic interests of the weaker sections of the people, and, in particular, of the Scheduled Castes and the Scheduled Tribes.
+* Article 47: The State shall regard the raising of the level of nutrition and the standard of living of its people and the improvement of public health as among its primary duties.
+* Article 48: The State shall organize agriculture and animal husbandry on modern and scientific lines and shall, in particular, take steps for preserving and improving the breeds, and for prohibiting the slaughter of cows and calves and other milch and draught cattle.
+* Article 48A: The State shall endeavor to protect and improve the environment and to safeguard the forests and wild life of the country.
+* Article 49: The State shall protect every monument or place or object of artistic or historic interest, declared by or under law made by Parliament to be of national importance.
+* Article 50: The State shall take steps to separate the judiciary from the executive in the public services of the State.
+* Article 51: The State shall endeavor to promote international peace and security, to maintain just and honorable relations between nations, to foster respect for international law and treaty obligations in the dealings of organized peoples with one another.
+
+--- DPSP vs Fundamental Rights
+The DPSP and Fundamental Rights are two important aspects of the Indian Constitution. While the Fundamental Rights are justiciable, the DPSP are not. However, the courts have used the DPSP to interpret laws and to give effect to the Fundamental Rights.
+
+In the case of Champakam Dorairajan (1951), the Supreme Court held that the Fundamental Rights prevail over the DPSP. However, in the case of Golaknath (1967), the Supreme Court held that the Fundamental Rights are unamendable. This decision was later overruled by the 24th Amendment.
+
+In the case of Kesavananda Bharati (1973), the Supreme Court introduced the basic structure doctrine, which holds that the Constitution has a basic structure that cannot be amended. The basic structure includes the principles of democracy, socialism, secularism, and federalism, among others.
+
+In the case of Minerva Mills (1980), the Supreme Court held that the balance between the Fundamental Rights and the DPSP is a part of the basic structure of the Constitution.
+
+=== PART IVA — FUNDAMENTAL DUTIES
+The Fundamental Duties are enshrined in Part IVA of the Indian Constitution, which was added by the 42nd Amendment in 1976. The Fundamental Duties are a set of 11 duties that are expected to be followed by every citizen of India.
+
+--- The 11 Fundamental Duties
+The 11 Fundamental Duties are:
+
+(a) to abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;
+(b) to cherish and follow the noble ideals which inspired our national struggle for freedom;
+(c) to uphold and protect the sovereignty, unity and integrity of India;
+(d) to defend the country and render national service when called upon to do so;
+(e) to promote harmony and the spirit of common brotherhood amongst all the people of India transcending religious, linguistic and regional or sectional diversities;
+(f) to value and preserve the rich heritage of our composite culture;
+(g) to protect and improve the natural environment including forests, lakes, rivers and wild life, and to have compassion for living creatures;
+(h) to develop the scientific temper, humanism and the spirit of inquiry and reform;
+(i) to safeguard public property and to abjure violence;
+(j) to strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavor and achievement;
+(k) to provide opportunities for education to his child or ward between the age of six and fourteen years, as the case may be.
+
+--- Enforceability of Fundamental Duties
+The Fundamental Duties are not justiciable, meaning they cannot be enforced by the courts. However, the courts have used the Fundamental Duties to uphold laws and policies that promote the values and principles enshrined in the Constitution.
+
+--- Practical Notes
+The Fundamental Duties are an important aspect of the Indian Constitution, and every citizen is expected to follow them. The Fundamental Duties promote the values of nationalism, secularism, and socialism, and are essential for the development of the country.
+
+=== KEY CONSTITUTIONAL AMENDMENTS
+The Indian Constitution has been amended several times since its adoption in 1950. Some of the key amendments include:
+
+1. The 1st Amendment (1951): This amendment added the 9th Schedule to the Constitution, which lists the laws that are protected from judicial review.
+2. The 7th Amendment (1956): This amendment reorganized the states on a linguistic basis.
+3. The 24th Amendment (1971): This amendment gave Parliament the power to amend any part of the Constitution, including the Fundamental Rights.
+4. The 25th Amendment (1971): This amendment added Article 39(b)(c) to the DPSP, which overrides the Fundamental Rights.
+5. The 42nd Amendment (1976): This amendment added the Fundamental Duties to the Constitution and changed the Preamble to include the words "Socialist" and "Secular".
+6. The 44th Amendment (1978): This amendment restored the Fundamental Rights and removed the right to property from the list of Fundamental Rights.
+7. The 52nd Amendment (1985): This amendment added the 10th Schedule to the Constitution, which deals with anti-defection laws.
+8. The 61st Amendment (1988): This amendment reduced the voting age from 21 to 18.
+9. The 69th Amendment (1991): This amendment made Delhi a National Capital Territory with a Legislative Assembly.
+10. The 73rd and 74th Amendments (1992): These amendments mandated the establishment of Panchayati Raj institutions and urban local bodies.
+11. The 86th Amendment (2002): This amendment added Article 21A to the Constitution, which provides for free and compulsory education to all children between the ages of 6 and 14.
+12. The 97th Amendment (2011): This amendment added Part IXB to the Constitution, which deals with cooperative societies.
+13. The 99th Amendment (2014): This amendment established the National Judicial Appointments Commission, which was later struck down by the Supreme Court.
+14. The 101st Amendment (2016): This amendment added Article 246A to the Constitution, which provides for a goods and services tax.
+15. The 102nd Amendment (2018): This amendment established the National Commission for Backward Classes.
+16. The 103rd Amendment (2019): This amendment provided for a 10% reservation for economically weaker sections of society.
+17. The 105th Amendment (2021): This amendment restored the power of states and union territories to identify Other Backward Classes.
+
+--- Practical Notes
+The Indian Constitution has undergone several amendments since its adoption in 1950. These amendments have been made to address the changing needs and aspirations of the people, and to promote the values of democracy, socialism, and secularism. Every citizen should be aware of the key amendments and their impact on the Constitution and the country.

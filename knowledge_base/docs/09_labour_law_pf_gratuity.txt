@@ -1,0 +1,137 @@
+---
+title: Labour Law — EPF Act 1952 and Payment of Gratuity Act 1972
+category: civil_law
+source: Government of India — Labour Law — EPF Act 1952 and Payment of Gratuity Act 1972
+year: 1952
+generated_at: 2026-04-19
+word_count: 1235
+---
+
+=== Indian Labour Law Reference ===
+
+--- Introduction to Labour Laws
+Indian labour laws are designed to protect the rights and interests of workers in the country. The laws cover various aspects of employment, including wages, working conditions, social security, and dispute resolution. This reference document provides an overview of the key labour laws in India, including the Employees' Provident Funds and Miscellaneous Provisions Act, 1952, the Payment of Gratuity Act, 1972, and other important laws.
+
+--- Employees' Provident Funds and Miscellaneous Provisions Act, 1952
+The Employees' Provident Funds and Miscellaneous Provisions Act, 1952, is a social security legislation that provides for the establishment of provident funds, pension schemes, and insurance schemes for employees in India.
+
+##### Coverage (S.1)
+The Act applies to establishments with 20 or more employees. The Central Government can extend the coverage to smaller units. Once an establishment is covered under the Act, it remains covered even if the number of employees falls below 20.
+
+##### Three Schemes
+The Act provides for three schemes:
+
+1. **EPF Scheme 1952**: A retirement savings scheme that provides a lump sum amount to employees on retirement.
+2. **EPS 1995**: A pension scheme that provides a monthly pension to employees on retirement.
+3. **EDLI Scheme 1976**: A life insurance scheme that provides a lump sum amount to the nominee of an employee in the event of the employee's death.
+
+##### Contribution Rates
+The contribution rates under the Act are as follows:
+
+* **Employee**: 12% of basic wages + DA + retaining allowance
+* **Employer**: 12% of total wages, with 3.67% going to EPF, 8.33% to EPS (capped at ₹15,000 basis), 0.5% to EDLI, and 0.5% to EPF admin charges
+
+##### Wage Ceiling
+The wage ceiling for contribution under the Act is ₹15,000 per month. Employees earning above this limit can voluntarily contribute to the schemes.
+
+##### International Workers
+International workers are required to contribute to the schemes, regardless of their salary limit.
+
+##### UAN
+The Universal Account Number (UAN) is a portable account number that can be used across employers. It is seeded with Aadhaar and bank account details.
+
+##### Checking Balance
+Employees can check their balance through the EPFO portal (epfindia.gov.in), UMANG app, SMS to 7738299899, or by giving a missed call to 011-22901406.
+
+##### Withdrawal Rules
+The withdrawal rules under the Act are as follows:
+
+* **Full Withdrawal**: Retirement at 58 years, permanent total disability, leaving India permanently, or unemployment for 2+ months (75% after 1 month, 25% after 2 months - 2020 rule)
+* **Partial Withdrawal**: Housing, marriage, education, medical, and COVID advance (3 months basic+DA or 75% of balance, whichever is less)
+
+##### Forms
+The forms required for withdrawal under the Act are:
+
+* **Form 19**: EPF withdrawal
+* **Form 10C**: EPS withdrawal
+* **Form 31**: Partial withdrawal
+
+##### Online Claims
+Online claims can be submitted through the EPFO portal, and the processing time is 3 days (online) to 20 days (manual).
+
+##### Dispute Resolution
+The dispute resolution mechanism under the Act is as follows:
+
+* **S.7A**: EPF Commissioner (quasi-judicial) for determination of dues
+* **S.7B**: Review of EPF Commissioner's order
+* **High Court**: Writ petition against Commissioner's order
+* **Recovery**: S.8F - recovery certificate, attachment of property, arrest
+
+--- Payment of Gratuity Act, 1972
+The Payment of Gratuity Act, 1972, is a social security legislation that provides for the payment of gratuity to employees on retirement or resignation.
+
+##### Coverage (S.1(3))
+The Act applies to factories, mines, oilfields, plantations, ports, railways, shops, and educational institutions with 10 or more employees. Once an establishment is covered under the Act, it remains covered even if the number of employees falls below 10.
+
+##### Eligibility (S.4(1))
+An employee is eligible for gratuity if they have completed 5 years of continuous service. The 5-year condition is waived in the event of death or disablement.
+
+##### Calculation (S.4(2))
+The gratuity is calculated as follows:
+
+Gratuity = Last drawn Basic + DA × 15/26 × Completed years of service
+
+##### Maximum Gratuity
+The maximum gratuity payable under the Act is ₹20 lakhs (Notification 2018). Government employees have no ceiling.
+
+##### Nomination (S.6)
+An employee can nominate a person to receive the gratuity in the event of their death. The nomination must be made within 30 days of completing 1 year of service, and updated within 30 days of marriage.
+
+##### Forfeiture (S.4(6))
+The gratuity can be forfeited wholly or partially if an employee is terminated for an offence involving moral turpitude or if they cause loss or damage to property due to wilful negligence.
+
+##### Employer's Duty (S.7)
+The employer is required to determine the gratuity within 30 days and pay it within 30 days of determination. Delay in payment attracts a penalty of simple interest at the bank rate.
+
+##### Controlling Authority
+The Regional Labour Commissioner or Assistant Labour Commissioner is the controlling authority under the Act.
+
+##### Criminal Penalty
+Non-payment of gratuity is a criminal offence punishable with imprisonment for 6 months to 2 years and a fine.
+
+--- Worked Example
+Last basic+DA: ₹50,000/month; Service: 8 years 7 months (rounds to 9 years)
+Gratuity = 50,000 × 15/26 × 9 = ₹2,59,615
+
+--- Gratuity Calculator Table
+
+| Last Basic+DA | Service | Gratuity |
+| --- | --- | --- |
+| ₹20,000 | 5 years | ₹58,462 |
+| ₹30,000 | 10 years | ₹1,73,846 |
+| ₹40,000 | 15 years | ₹2,91,538 |
+| ₹50,000 | 20 years | ₹3,84,615 |
+
+--- Other Key Labour Laws
+The following are other key labour laws in India:
+
+* **Maternity Benefit Act 1961 (amended 2017)**: Provides for 26 weeks of paid leave for the first two children, 12 weeks for the third child onwards, and 12 weeks for adoptive/commissioning mothers.
+* **Minimum Wages Act 1948**: Provides for state-specific scheduled employments and central sphere separately notified. Revision of minimum wages is done every 5 years, and non-payment is a criminal offence.
+* **Payment of Bonus Act 1965**: Provides for a minimum bonus of 8.33% of salary (or ₹100, whichever is higher) and a maximum bonus of 20% of salary. The bonus is payable within 8 months of the financial year-end.
+* **Code on Wages 2019**: Consolidates the Minimum Wages Act, Payment of Wages Act, Bonus Act, and Equal Remuneration Act. The code is not yet fully enforced.
+
+--- Practical Notes
+The following are practical notes on labour laws in India:
+
+1. **Q: What is the coverage under the Employees' Provident Funds and Miscellaneous Provisions Act, 1952?**
+A: The Act applies to establishments with 20 or more employees.
+2. **Q: What is the wage ceiling for contribution under the Employees' Provident Funds and Miscellaneous Provisions Act, 1952?**
+A: The wage ceiling is ₹15,000 per month.
+3. **Q: What is the maximum gratuity payable under the Payment of Gratuity Act, 1972?**
+A: The maximum gratuity payable is ₹20 lakhs (Notification 2018).
+4. **Q: What is the eligibility for gratuity under the Payment of Gratuity Act, 1972?**
+A: An employee is eligible for gratuity if they have completed 5 years of continuous service.
+5. **Q: What is the calculation of gratuity under the Payment of Gratuity Act, 1972?**
+A: Gratuity = Last drawn Basic + DA × 15/26 × Completed years of service
+6. **Q: What is the penalty for non-payment of gratuity under the Payment of Gratuity Act, 1972?**
+A: Non-payment of gratuity is a criminal offence punishable with imprisonment for 6 months to 2 years and a fine.

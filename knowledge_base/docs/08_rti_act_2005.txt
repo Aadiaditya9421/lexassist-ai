@@ -1,0 +1,138 @@
+---
+title: Right to Information Act, 2005
+category: special_law
+source: Government of India — Right to Information Act, 2005
+year: 2005
+generated_at: 2026-04-19
+word_count: 1447
+---
+
+=== RIGHT TO INFORMATION ACT, 2005 ===
+
+--- DEFINITIONS (S.2)
+
+The Right to Information Act, 2005, defines the following key terms:
+
+1. **Public Authority (S.2(h))**: A body constituted by the Constitution, Parliament, State Legislature, or Government notification. This includes Public Sector Undertakings (PSUs), nationalized banks, government-aided institutions, regulatory bodies (such as SEBI, RBI, IRDAI, and TRAI), and bodies substantially financed by the government. However, private companies (unless substantially government-funded) and the judiciary's administrative functions (but not judicial decisions, which are public records) are not covered.
+2. **Information (S.2(f))**: Any material in any form, including records, documents, memos, emails, opinions, advices, press releases, circulars, orders, logbooks, contracts, reports, papers, samples, models, and data in electronic form.
+3. **Right to Information (S.2(j))**: The right to inspect work, documents, and records; take notes; take certified copies; take certified samples; and obtain information in diskette, floppy, tape, video, or CD format.
+4. **Public Information Officer (PIO) (S.2(g))**: A designated officer in each public authority who receives and processes RTI applications. The PIO must be designated by the head of the public authority (S.5).
+5. **First Appellate Authority (FAA)**: An officer senior to the PIO in the same public authority.
+
+--- HOW TO FILE AN RTI (S.6)
+
+To file an RTI application:
+
+1. **Written Application**: Submit a written application in English, Hindi, or the official language of the area.
+2. **No Prescribed Format**: There is no prescribed format for the application; any written request with your name and contact address is sufficient.
+3. **No Reason Required**: You do not need to give a reason for seeking the information.
+4. **Fees**: Pay the application fee (₹10 for Central Government) and additional fees for copies (₹2 per page) and inspection (₹5 per hour).
+5. **State-wise Fees**: Fees vary from state to state (usually ₹10-50).
+6. **BPL Exemption**: Below Poverty Line (BPL) applicants are completely exempt from all fees (S.7(5)).
+7. **Mode of Filing**: File the application in person, by post, or electronically via the RTI Online Portal (rtionline.gov.in).
+8. **Where to File**: File the application with the PIO of the public authority that holds the information.
+9. **Wrong Authority**: If you file with the wrong authority, the PIO must transfer the application to the correct authority within 5 days (S.6(3)).
+
+--- TIMELINES (S.7)
+
+The following timelines apply:
+
+1. **Normal**: The PIO must respond within 30 days of receipt of the application.
+2. **Life or Liberty Matters**: The PIO must respond within 48 hours (S.7(1) proviso) in matters related to life or liberty.
+3. **Transferred Applications**: If the application is transferred to another authority, the new authority must respond within 35 days from the original receipt.
+4. **Deemed Refusal**: If the PIO does not respond within 30 days, it is considered a deemed refusal (S.7(2)).
+5. **Fee Not Paid**: The PIO must intimate the applicant within 5 days of receipt if the fee is not paid.
+6. **Extension of Time**: The public authority head can extend the time for response with written intimation.
+
+--- FIRST APPEAL (S.19(1))
+
+If you are not satisfied with the PIO's decision:
+
+1. **To**: File an appeal with the First Appellate Authority (FAA) of the same public authority.
+2. **When**: File the appeal within 30 days of receipt of the PIO's decision or the expiry of the 30-day period.
+3. **FAA Decision**: The FAA must decide on the appeal within 30 days (extendable to 45 days with reasons).
+
+--- SECOND APPEAL (S.19(3))
+
+If you are not satisfied with the FAA's decision:
+
+1. **To**: File an appeal with the Central Information Commission (CIC) or State Information Commission (SIC).
+2. **When**: File the appeal within 90 days of the FAA's decision or the expiry of the FAA's decision period.
+3. **CIC/SIC Powers**: The CIC/SIC can direct disclosure, impose a penalty on the PIO, and recommend disciplinary action.
+
+--- EXEMPTIONS (S.8)
+
+The following exemptions apply:
+
+1. **Sovereignty, Security, Strategic, Scientific, or Economic Interests**: Information that affects India's sovereignty, security, strategic, scientific, or economic interests.
+2. **Court Orders**: Information that is expressly forbidden by courts or would constitute contempt of court.
+3. **Parliamentary/Legislature Privilege**: Information that breaches parliamentary or legislature privilege.
+4. **Commercial Confidence, Trade Secrets, Intellectual Property**: Information that affects commercial confidence, trade secrets, or intellectual property of third parties, unless larger public interest justifies disclosure.
+5. **Fiduciary Relationship**: Information held in a fiduciary relationship.
+6. **Foreign Government Information**: Information received in confidence from a foreign government.
+7. **Life or Physical Safety**: Information that endangers life or physical safety or identifies the source of information.
+8. **Investigation, Prosecution, or Apprehension**: Information that impedes the process of investigation, prosecution, or apprehension of an offender.
+9. **Cabinet Papers**: Cabinet papers and Council of Ministers records until a decision is taken and the matter is complete.
+10. **Personal Information**: Personal information that has no relation to public activity or would cause an unwarranted invasion of privacy.
+11. **Override**: All exemptions are subject to override if the public interest in disclosure outweighs the harm (S.8(2)).
+12. **Copyright Infringement**: The PIO can refuse information if it involves copyright infringement (S.9).
+
+--- THIRD PARTY INFORMATION (S.11)
+
+If the information relates to a third party:
+
+1. **Notice to Third Party**: The PIO must give the third party written notice within 5 days.
+2. **Representation by Third Party**: The third party can make a representation within 10 days.
+3. **PIO Decision**: The PIO decides after considering the representation; the third party can appeal.
+
+--- PENALTIES (S.20)
+
+The CIC/SIC can impose penalties:
+
+1. **Delay**: ₹250 per day for delay (maximum ₹25,000 per complaint) (S.20(1)).
+2. **Disciplinary Action**: The CIC/SIC can recommend disciplinary action against the PIO (S.20(2)).
+3. **Reasonable Opportunity**: The penalty is imposed only after the PIO is given a reasonable opportunity to be heard.
+4. **Burden of Proof**: The burden of proof is on the PIO to prove that the denial was justified.
+
+--- SPECIAL PROVISIONS
+
+1. **Intelligence/Security Organisations**: Certain intelligence and security organisations (such as RAW, IB, and CRPF) are exempt from RTI, except for allegations of corruption or human rights violations (S.24).
+2. **RTI to Political Parties**: The CIC has ruled that political parties are covered under RTI (2013), but parties have challenged this; there is no final Supreme Court ruling yet, and parties do not comply.
+
+### STEP-BY-STEP RTI GUIDE
+
+1. **Identify the Public Authority**: Determine which public authority holds the information you seek.
+2. **Prepare the Application**: Write a clear and concise application with your name, contact address, and the information you seek.
+3. **Pay the Fee**: Pay the application fee and additional fees for copies and inspection.
+4. **File the Application**: File the application with the PIO of the public authority.
+5. **Follow Up**: Follow up with the PIO if you do not receive a response within the timelines.
+
+### PENALTY TABLE
+
+| Penalty | Amount |
+| --- | --- |
+| Delay | ₹250 per day (max ₹25,000) |
+| Disciplinary Action | As recommended by CIC/SIC |
+
+### PRACTICAL NOTES
+
+1. **File RTI Applications**: File RTI applications to access information from public authorities.
+2. **Use RTI Online Portal**: Use the RTI Online Portal (rtionline.gov.in) to file applications electronically.
+3. **Pay Fees**: Pay the required fees for applications, copies, and inspection.
+4. **Follow Timelines**: Follow the timelines for responses, appeals, and penalties.
+5. **Seek Assistance**: Seek assistance from RTI activists, lawyers, or NGOs if needed.
+
+### Q&A
+
+1. **Q: What is the purpose of the Right to Information Act, 2005?**
+A: The purpose of the RTI Act is to provide citizens with the right to access information from public authorities.
+2. **Q: How do I file an RTI application?**
+A: You can file an RTI application by writing a clear and concise application with your name, contact address, and the information you seek, and submitting it to the PIO of the public authority.
+3. **Q: What are the exemptions under the RTI Act?**
+A: The exemptions under the RTI Act include sovereignty, security, strategic, scientific, or economic interests of India, court orders, parliamentary/legislature privilege, commercial confidence, trade secrets, intellectual property, fiduciary relationship, foreign government information, life or physical safety, investigation, prosecution, or apprehension, cabinet papers, and personal information.
+4. **Q: Can I appeal against the PIO's decision?**
+A: Yes, you can appeal against the PIO's decision to the First Appellate Authority (FAA) and then to the Central Information Commission (CIC) or State Information Commission (SIC).
+5. **Q: What are the penalties for non-compliance with the RTI Act?**
+A: The penalties for non-compliance with the RTI Act include ₹250 per day for delay (maximum ₹25,000) and disciplinary action against the PIO.
+6. **Q: Can I file an RTI application electronically?**
+A: Yes, you can file an RTI application electronically through the RTI Online Portal (rtionline.gov.in).
