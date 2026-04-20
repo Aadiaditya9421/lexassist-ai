@@ -28,7 +28,8 @@ _ROOT = Path(__file__).parent.resolve()
 @dataclass
 class Config:
     # ── LLM ──────────────────────────────────────────────────────────────────
-    llm_model: str = "gpt-4o-mini"
+    llm_provider: str = "groq"  # "groq" or "openai"
+    llm_model: str = "llama-3.3-70b-versatile"
     # temperature=0.0 -> deterministic outputs, critical for legal accuracy
     temperature: float = 0.0
     max_tokens: int = 1024
@@ -60,10 +61,12 @@ class Config:
     # Summarise chat history after this many messages to keep context tight
     history_summary_threshold: int = 20
 
-    # ── API key ───────────────────────────────────────────────────────────────
-    # Loaded from OPENAI_API_KEY env var (set in .env locally, Secrets on Cloud)
+    # ── API keys ──────────────────────────────────────────────────────────────
     openai_api_key: str = field(
         default_factory=lambda: os.getenv("OPENAI_API_KEY", "")
+    )
+    groq_api_key: str = field(
+        default_factory=lambda: os.getenv("GROQ_API_KEY", "")
     )
 
     # ── App metadata ──────────────────────────────────────────────────────────
@@ -88,7 +91,12 @@ class Config:
         """
         errors: list[str] = []
 
-        if not self.openai_api_key:
+        if self.llm_provider == "groq" and not self.groq_api_key:
+            errors.append(
+                "GROQ_API_KEY is not set. "
+                "Copy .env.example -> .env and paste your key."
+            )
+        elif self.llm_provider == "openai" and not self.openai_api_key:
             errors.append(
                 "OPENAI_API_KEY is not set. "
                 "Copy .env.example -> .env and paste your key."
