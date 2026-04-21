@@ -10,6 +10,7 @@ langgraph>=0.2.0                # tested: 1.1.6   — StateGraph, MemorySaver
 langchain>=0.3.0                # tested: 1.2.15  — Document, splitters, schema
 langchain-openai>=0.2.0         # tested: 1.1.14  — ChatOpenAI wrapper
 langchain-community>=0.3.0      # tested: 0.4.1   — Chroma, HuggingFaceEmbeddings
+langchain-groq>=0.2.0            # tested: 0.3.4   — ChatGroq (default LLM provider)
 langchain-core>=0.3.0           # tested: needed for Document class
 langchain-text-splitters>=0.3.0 # tested: needed for RecursiveCharacterTextSplitter
 

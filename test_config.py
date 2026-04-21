@@ -13,7 +13,8 @@ from config import Config
 
 def test_config_instantiates():
     c = Config()
-    assert c.llm_model == "gpt-4o-mini"
+    assert c.llm_provider == "groq"
+    assert c.llm_model == "llama-3.3-70b-versatile"
     assert c.temperature == 0.0
     assert c.retrieval_k == 6
     assert c.mmr_fetch_k == 12
@@ -59,8 +60,8 @@ def test_post_init_coerces_types():
     object.__setattr__(c, "mmr_fetch_k", "12")
     object.__setattr__(c, "chunk_size", "800")
     object.__setattr__(c, "chunk_overlap", "120")
-    # Remaining fields with defaults
-    object.__setattr__(c, "llm_model", "gpt-4o-mini")
+    object.__setattr__(c, "llm_provider", "groq")
+    object.__setattr__(c, "llm_model", "llama-3.3-70b-versatile")
     object.__setattr__(c, "embed_model", "sentence-transformers/all-MiniLM-L6-v2")
     object.__setattr__(c, "chroma_persist_dir", "./chroma_store")
     object.__setattr__(c, "collection_name", "legal_docs")
@@ -69,9 +70,11 @@ def test_post_init_coerces_types():
     object.__setattr__(c, "sqlite_path", "./chat_history.db")
     object.__setattr__(c, "history_summary_threshold", 20)
     object.__setattr__(c, "openai_api_key", "")
+    object.__setattr__(c, "groq_api_key", "")
     object.__setattr__(c, "app_name", "LexAssist AI")
     object.__setattr__(c, "app_version", "1.0.0")
     object.__setattr__(c, "app_description", "")
+    object.__setattr__(c, "max_tokens", 1024)
     c.__post_init__()
     assert isinstance(c.temperature, float)
     assert isinstance(c.retrieval_k, int)
@@ -82,7 +85,7 @@ def test_post_init_coerces_types():
 
 def test_validate_passes_with_valid_config(tmp_path):
     c = Config()
-    c.openai_api_key = "sk-test-key"
+    c.groq_api_key = "gsk-test-key"
     c.docs_dir = str(tmp_path)          # tmp_path always exists
     c.validate()                         # must not raise
 
@@ -91,9 +94,10 @@ def test_validate_passes_with_valid_config(tmp_path):
 
 def test_validate_raises_on_missing_api_key(tmp_path):
     c = Config()
-    c.openai_api_key = ""
+    c.llm_provider = "groq"
+    c.groq_api_key = ""
     c.docs_dir = str(tmp_path)
-    with pytest.raises(EnvironmentError, match="OPENAI_API_KEY"):
+    with pytest.raises(EnvironmentError, match="GROQ_API_KEY"):
         c.validate()
 
 def test_validate_raises_on_bad_threshold(tmp_path):
@@ -132,7 +136,8 @@ def test_validate_raises_when_docs_dir_missing():
 def test_validate_collects_multiple_errors(tmp_path):
     """All errors should appear together in one raise, not one at a time."""
     c = Config()
-    c.openai_api_key = ""
+    c.llm_provider = "groq"
+    c.groq_api_key = ""
     c.faithfulness_threshold = 2.0
     c.retrieval_k = 20
     c.mmr_fetch_k = 5
@@ -140,7 +145,7 @@ def test_validate_collects_multiple_errors(tmp_path):
     with pytest.raises(EnvironmentError) as exc_info:
         c.validate()
     msg = str(exc_info.value)
-    assert "OPENAI_API_KEY" in msg
+    assert "GROQ_API_KEY" in msg
     assert "faithfulness_threshold" in msg
     assert "retrieval_k" in msg
 

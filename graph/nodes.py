@@ -6,6 +6,7 @@ from pathlib import Path
 from uuid import uuid4
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
+from langchain_core.messages import HumanMessage, AIMessage
 from config import config
 from graph.state import AgentState
 
@@ -41,13 +42,32 @@ def _get_vs():
     return _vectorstore
 
 def memory_node(state: AgentState) -> dict:
-    """Summarize history if it gets too long, otherwise just pass."""
-    history = state.get("chat_history", [])
-    if len(history) > 20:
-        # For simplicity, keeping the last 10 messages instead of making an expensive LLM call here,
-        # but in a production system an LLM summarizer would be called.
-        return {"chat_history": history[-10:]}
-    return {}
+    """Reset transient state and append the current query to chat history.
+
+    Why the reset?  LangGraph's MemorySaver persists the FULL AgentState
+    between invocations on the same thread_id.  Without explicitly zeroing
+    transient fields here, values like tool_result and should_fallback
+    leak from a previous query and corrupt the current one (BUG-01).
+
+    chat_history uses an operator.add reducer, so returning a list APPENDS
+    to the existing history — we cannot truncate via return value.
+    Truncation is handled at read-time in answer_node instead.
+    """
+    return {
+        # ── Append current query to conversation memory ──────────────
+        "chat_history": [HumanMessage(content=state["query"])],
+        # ── Reset ALL transient fields to prevent cross-invocation leak ─
+        "route": "",
+        "rewritten_query": "",
+        "documents": [],
+        "relevant_docs": [],
+        "context": "",
+        "sources": [],
+        "tool_result": None,
+        "answer": "",
+        "confidence": 0.0,
+        "should_fallback": False,
+    }
 
 def router_node(state: AgentState) -> dict:
     """Classify the user's intent into rag, tool, or chitchat."""
@@ -56,23 +76,30 @@ def router_node(state: AgentState) -> dict:
 - If it relates to detailed legal analysis, specific sections beyond 302/376/420/498A, constitutional rights, procedures, or acts -> Output: 'rag'
 - If it is a generic greeting or conversational nicety -> Output: 'chitchat'
 Output ONLY one word: rag, tool, or chitchat."""
-    
-    prompt = ChatPromptTemplate.from_messages([("system", system), ("user", "{query}")])
-    chain = prompt | _get_llm()
-    result = chain.invoke({"query": state["query"]})
-    
-    route = result.content.strip().lower()
-    if route not in ["rag", "tool", "chitchat"]:
-        route = "rag"  # Fallback to rag
+
+    try:
+        prompt = ChatPromptTemplate.from_messages([("system", system), ("user", "{query}")])
+        chain = prompt | _get_llm()
+        result = chain.invoke({"query": state["query"]})
+        route = result.content.strip().lower()
+        if route not in ["rag", "tool", "chitchat"]:
+            route = "rag"
+    except Exception as e:
+        log.warning(f"Router LLM call failed: {e} — defaulting to 'rag'")
+        route = "rag"
     return {"route": route}
 
 def rewrite_node(state: AgentState) -> dict:
     """HyDE rewriting: Generate a hypothetical legal passage to improve retrieval."""
     system = "Write a short, authoritative sounding legal paragraph from an Indian court document that would answer the following query. Do not explain, just write the paragraph."
-    prompt = ChatPromptTemplate.from_messages([("system", system), ("user", "{query}")])
-    chain = prompt | _get_llm()
-    result = chain.invoke({"query": state["query"]})
-    return {"rewritten_query": result.content.strip()}
+    try:
+        prompt = ChatPromptTemplate.from_messages([("system", system), ("user", "{query}")])
+        chain = prompt | _get_llm()
+        result = chain.invoke({"query": state["query"]})
+        return {"rewritten_query": result.content.strip()}
+    except Exception as e:
+        log.warning(f"Rewrite LLM call failed: {e} — using original query")
+        return {"rewritten_query": state["query"]}
 
 def retrieval_node(state: AgentState) -> dict:
     """Retrieve top contextual documents via MMR."""
@@ -97,22 +124,26 @@ If the chunk is irrelevant, output 'no'.
 Do not grade the sentiment, only the legal applicability. Output ONLY 'yes' or 'no'."""
     prompt = ChatPromptTemplate.from_messages([("system", system), ("user", "Query: {query}\n\nChunk: {chunk}")])
     chain = prompt | _get_llm()
-    
+
     relevant_docs = []
     sources = []
-    
+
     for doc in state.get("documents", []):
-        result = chain.invoke({"query": state["query"], "chunk": doc.page_content})
-        grade = result.content.strip().lower()
+        try:
+            result = chain.invoke({"query": state["query"], "chunk": doc.page_content})
+            grade = result.content.strip().lower()
+        except Exception as e:
+            log.warning(f"Grader LLM call failed for chunk: {e} — skipping")
+            grade = "no"
         if "yes" in grade:
             relevant_docs.append(doc)
             source_meta = {"source": doc.metadata.get("source", "Unknown"), "title": doc.metadata.get("title", "Unknown Section")}
             if source_meta not in sources:
                 sources.append(source_meta)
-    
+
     should_fallback = len(relevant_docs) == 0
     context = "\n\n".join([d.page_content for d in relevant_docs])
-    
+
     return {
         "relevant_docs": relevant_docs,
         "context": context,
@@ -160,7 +191,7 @@ def answer_node(state: AgentState) -> dict:
         return {"answer": "Hello! I am LexAssist AI, an Indian Legal Assistant. How can I help you with Indian law today?"}
 
     if state.get("tool_result"):
-        # We already handled it in tool node
+        # Tool node already generated the answer
         return {}
 
     system = """You are an expert Legal Assistant specializing in Indian Law.
@@ -168,58 +199,64 @@ Your single directive is to answer the user's query USING ONLY the provided cont
 - You must cite the relevant sections or article numbers mentioned in the context.
 - If the context provided does not contain the answer, you must respond EXACTLY with: 'I don't have enough information to answer that based on the legal documents available to me.'
 - ALWAYS end your response with: '\n\nConsult a qualified lawyer.'"""
-    
-    # Grab last 4 history turns for context string
-    hist_string = ""
-    if state.get("chat_history"):
-        last_4 = state["chat_history"][-4:]
-        hist_string = "\n".join([f"{msg.type}: {msg.content}" for msg in last_4])
 
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system),
-        ("user", "Chat History:\n{history}\n\nContext:\n{context}\n\nUser Query: {query}")
-    ])
-    
-    chain = prompt | _get_llm()
-    result = chain.invoke({
-        "history": hist_string,
-        "context": state.get("context", ""),
-        "query": state["query"]
-    })
-    
-    return {"answer": result.content.strip()}
+    # Grab last 8 history messages for multi-turn context (truncation at read-time,
+    # not at write-time, because operator.add reducer prevents list replacement).
+    hist_string = ""
+    history = state.get("chat_history", [])
+    if history:
+        last_n = history[-8:]
+        hist_string = "\n".join([f"{msg.type}: {msg.content}" for msg in last_n])
+
+    try:
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", system),
+            ("user", "Chat History:\n{history}\n\nContext:\n{context}\n\nUser Query: {query}")
+        ])
+        chain = prompt | _get_llm()
+        result = chain.invoke({
+            "history": hist_string,
+            "context": state.get("context", ""),
+            "query": state["query"]
+        })
+        return {"answer": result.content.strip()}
+    except Exception as e:
+        log.warning(f"Answer LLM call failed: {e}")
+        return {"answer": "I encountered a temporary error generating the response. Please try again.\n\nConsult a qualified lawyer."}
 
 def eval_node(state: AgentState) -> dict:
     """Evaluate hallucination: Verify that the drafted answer accurately maps to the retrieved context."""
     if state.get("route") != "rag" or state.get("should_fallback"):
-         return {"confidence": 1.0, "should_fallback": state.get("should_fallback", False)}
+        return {"confidence": 1.0, "should_fallback": state.get("should_fallback", False)}
 
     system = """Given the context and the generated draft response, rate how well the response maps to the context.
 Output ONLY a float between 0.0 and 1.0. 
 0.0 = completely hallucinated or irrelevant. 
 1.0 = perfectly grounded in context.
 Return ONLY the float value."""
-    
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system),
-        ("user", "Context: {context}\n\nDraft Answer: {answer}")
-    ])
-    
-    chain = prompt | _get_llm()
-    result = chain.invoke({
-        "context": state.get("context", ""),
-        "answer": state.get("answer", "")
-    })
-    
+
     try:
-        score = float(result.content.strip())
-    except Exception:
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", system),
+            ("user", "Context: {context}\n\nDraft Answer: {answer}")
+        ])
+        chain = prompt | _get_llm()
+        result = chain.invoke({
+            "context": state.get("context", ""),
+            "answer": state.get("answer", "")
+        })
+        try:
+            score = float(result.content.strip())
+        except (ValueError, TypeError):
+            score = 0.0
+    except Exception as e:
+        log.warning(f"Eval LLM call failed: {e} — defaulting to score 0.0")
         score = 0.0
-        
+
     should_fallback = state.get("should_fallback", False)
     if score < config.faithfulness_threshold:
         should_fallback = True
-        
+
     return {"confidence": score, "should_fallback": should_fallback}
 
 def fallback_node(state: AgentState) -> dict:
@@ -227,22 +264,29 @@ def fallback_node(state: AgentState) -> dict:
     return {"answer": "I don't have sufficient information to answer that based on the legal documents available to me.\n\nConsult a qualified lawyer."}
 
 def save_node(state: AgentState) -> dict:
-    """Logs the final state mapping into an SQLite tracking table to ensure auditability."""
+    """Logs the final state into SQLite and appends AIMessage to chat history."""
     db_path = config.sqlite_path
-    conn = sqlite3.connect(db_path)
-    c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS chat_log
-                 (id TEXT PRIMARY KEY, thread_id TEXT, query TEXT, answer TEXT, 
-                  confidence REAL, sources TEXT, route TEXT, created_at TEXT)''')
-                  
-    log_id = str(uuid4())
-    sources_json = json.dumps(state.get("sources", []))
-    
-    c.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-              (log_id, state.get("thread_id", ""), state.get("query", ""), 
-               state.get("answer", ""), state.get("confidence", 0.0), 
-               sources_json, state.get("route", ""), datetime.now().isoformat()))
-    
-    conn.commit()
-    conn.close()
-    return {}
+    try:
+        conn = sqlite3.connect(db_path)
+        c = conn.cursor()
+        c.execute('''CREATE TABLE IF NOT EXISTS chat_log
+                     (id TEXT PRIMARY KEY, thread_id TEXT, query TEXT, answer TEXT, 
+                      confidence REAL, sources TEXT, route TEXT, created_at TEXT)''')
+
+        log_id = str(uuid4())
+        sources_json = json.dumps(state.get("sources", []))
+
+        c.execute("INSERT INTO chat_log VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                  (log_id, state.get("thread_id", ""), state.get("query", ""),
+                   state.get("answer", ""), state.get("confidence", 0.0),
+                   sources_json, state.get("route", ""), datetime.now().isoformat()))
+
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        log.warning(f"Failed to save to SQLite: {e}")
+
+    # Append the final answer to chat_history so multi-turn context works.
+    # operator.add reducer will concatenate this list with the existing history.
+    answer = state.get("answer", "")
+    return {"chat_history": [AIMessage(content=answer)]} if answer else {}
