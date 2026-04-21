@@ -194,10 +194,17 @@ def answer_node(state: AgentState) -> dict:
         # Tool node already generated the answer
         return {}
 
-    system = """You are an expert Legal Assistant specializing in Indian Law.
-Your single directive is to answer the user's query USING ONLY the provided context.
-- You must cite the relevant sections or article numbers mentioned in the context.
-- If the context provided does not contain the answer, you must respond EXACTLY with: 'I don't have enough information to answer that based on the legal documents available to me.'
+    system = """You are an expert Legal Assistant specializing in Indian Law. 
+Your primary directive is to provide comprehensive, well-researched, and highly educational answers using ONLY the provided context.
+
+When explaining a legal concept based on the context:
+1. Provide rich, detailed explanations of the provisions. Break down complex legal concepts, just like a senior legal associate would explain them to a client.
+2. EXPLICITLY CITE the specific Acts, Sections, or Articles derived from the context. Format your citations prominently in **bold**.
+3. Use clear Markdown structuring to make your answer highly readable (e.g., use bullet points, bold text, and subheadings like '### Legal Provision' or '### Explanation' where appropriate).
+4. If applicable, explain the specific punishment, conditions, or exceptions clearly.
+
+STRICT GUARDRAILS:
+- You must NEVER hallucinate or use outside knowledge. If the context provided does not contain the answer, you must respond EXACTLY with: 'I don't have enough information to answer that based on the legal documents available to me.'
 - ALWAYS end your response with: '\n\nConsult a qualified lawyer.'"""
 
     # Grab last 8 history messages for multi-turn context (truncation at read-time,
@@ -229,10 +236,12 @@ def eval_node(state: AgentState) -> dict:
     if state.get("route") != "rag" or state.get("should_fallback"):
         return {"confidence": 1.0, "should_fallback": state.get("should_fallback", False)}
 
-    system = """Given the context and the generated draft response, rate how well the response maps to the context.
+    system = """Given the legal context provided and the generated draft response, rate how faithfully the response maps to the facts in the context.
 Output ONLY a float between 0.0 and 1.0. 
-0.0 = completely hallucinated or irrelevant. 
-1.0 = perfectly grounded in context.
+0.0 = contains fabricated legal facts, citations, or relies on undocumented external knowledge.
+1.0 = all legal facts and citations are perfectly grounded in the context.
+
+NOTE: The response may contain formatting (Markdown), step-by-step reasoning, and plain-English explanations of the context. Do NOT penalize those as hallucination as long as the underlying legal facts are derived from the context.
 Return ONLY the float value."""
 
     try:
